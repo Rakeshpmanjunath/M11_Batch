@@ -1,13 +1,13 @@
 import {test} from '../../fixtures/crmfixtures'
-import leads from '../../testdata/lead.json'
+import leadsdata from '../../testdata/leads.json'
 
 test('lead',async ({leads}) => {
     test.slow()
     await leads.clickLeads()
     await leads.clickCreateLead()
     await leads.createLead(
-        lead.firstname,
-        lead.lastname,
-        lead.company_name)
+        leadsdata.firstname,
+        leadsdata.lastname,
+        leadsdata.company_name)
     await leads.signout()
 }) 
