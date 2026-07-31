@@ -1,7 +1,7 @@
 import {test} from '../../fixtures/crmfixtures'
 import leadsdata from '../../testdata/leads.json'
 
-test('lead',async ({leads}) => {
+test('lead fixture',async ({leads}) => {
     test.slow()
     await leads.clickLeads()
     await leads.clickCreateLead()
