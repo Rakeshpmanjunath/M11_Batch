@@ -34,7 +34,7 @@ import { ContactsCRM } from "../../pages/contatct_POM";
 //     await page.locator('//a[text()="Sign Out"]').click()
 // })
 
-test.only('Contact module POM',async ({page}) => {
+test('Contact module POM',async ({page}) => {
     //! login to the application
     let sign = new loginclass(page)
 
@@ -58,7 +58,7 @@ test.only('Contact module POM',async ({page}) => {
 // import { loginclass } from './../../pages/login'; 
 // import { random } from "../../utils/random";
 
-// test.only("POM2", async ({page}) => {
+// test("POM2", async ({page}) => {
 //     let sign = new loginclass(page)
 //     await sign.launchurl(login.url)
 //     await sign.details(login.username, login.password)

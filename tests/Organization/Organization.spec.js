@@ -60,7 +60,7 @@ import { organization } from "../../pages/organization_POM";
 //     })
 
 
-test.only('Organization module POM',async ({page}) => {
+test('Organization module POM',async ({page}) => {
     //! login to the application
     let signin = new loginclass(page)
     await signin.launchurl(login.url)
